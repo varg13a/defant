@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171317" />
+    <title>Defant / Maya Vale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="Defant home"><span>de</span>fant</a>
+      <nav aria-label="Main navigation">
+        <a href="#wishlist">Wishlist</a>
+        <a href="#about">About Maya</a>
+      </nav>
+      <button class="outline-button" data-action="share">Share page</button>
+    </header>
+
+    <main id="top">
+      <section class="profile-hero" aria-labelledby="profile-title">
+        <div class="hero-copy">
+          <p class="status"><span></span> currently online</p>
+          <p class="location">Maya Vale · London</p>
+          <h1 id="profile-title">A little <em>closer.</em></h1>
+          <p class="intro">My corner of the internet for things I want, places I want to go, and little reasons to stay up late.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#wishlist">See my wishlist</a>
+            <button class="text-button" data-action="message">Leave a private note</button>
+          </div>
+          <div class="privacy-note"><span class="lock">⌁</span><span>Your details stay private. Gifts ship without sharing addresses.</span></div>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait-frame">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85" alt="Maya Vale in soft red light" />
+            <div class="portrait-caption"><span>after hours / mv</span><span>01 — 04</span></div>
+          </div>
+          <div class="orbit-word">MAKE IT<br />MEMORABLE</div>
+        </div>
+      </section>
+
+      <section class="wishlist-section" id="wishlist" aria-labelledby="wishlist-title">
+        <div class="section-heading">
+          <div><h2 id="wishlist-title">The wishlist</h2></div>
+          <p class="section-note">Choose a gift, cover a little of a bigger dream, or simply send a note.</p>
+        </div>
+        <div class="wish-grid">
+          <article class="wish-card wish-card-featured">
+            <div class="wish-image"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85" alt="Red fashion editorial" /><span class="card-tag">top wish</span></div>
+            <div class="wish-details"><div><h3>Something red</h3><p>A look for the next late night.</p></div><strong>$180</strong><button class="gift-button" data-action="gift">Send this gift</button></div>
+          </article>
+          <article class="wish-card">
+            <div class="wish-image image-night"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85" alt="Warm creative studio at night" /><span class="card-tag">goal · 62%</span></div>
+            <div class="wish-details"><div><h3>Studio nights</h3><p>New lights for better stories.</p></div><strong>$420 <small>of $680</small></strong><button class="gift-button" data-action="gift">Contribute</button></div>
+          </article>
+          <article class="wish-card wish-card-small">
+            <div class="wish-image image-paper"><span class="paper-mark">✦</span><span class="card-tag">little luxury</span></div>
+            <div class="wish-details"><div><h3>Sunday perfume</h3><p>Something warm and a little dangerous.</p></div><strong>$95</strong><button class="gift-button" data-action="gift">Send this gift</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-quote">“The best gifts feel like<br /><em>someone was paying attention.</em>”</div>
+        <div class="about-copy"><p class="note-label">A note from Maya</p><p>I make things in public, but this part is just for the people who want to make my world a little softer. Thank you for being here.</p><button class="outline-button" data-action="message">Write a note</button></div>
+      </section>
+    </main>
+
+    <footer><a class="wordmark" href="#top"><span>de</span>fant</a><p>Creator pages with a little more intention.</p><div><a href="#wishlist">Wishlist</a><a href="#top">Back to top ↑</a></div></footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
